@@ -1,0 +1,400 @@
+{
+	"id": "e0e8ebe0-8602-3841-c5eb-360acd251559",
+	"name": "Projeto DIO",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Collection",
+			"description": "",
+			"collectionId": "e0e8ebe0-8602-3841-c5eb-360acd251559",
+			"order": [
+				"1b8d43f0-f729-5d8b-6b7c-bf83dbfffb1b",
+				"62f8cafb-fcec-2bcb-9436-b43b2a275fff",
+				"99370514-df99-b635-5ff5-be9856d53627",
+				"1a5c9147-0a24-51ab-07df-c7eda617878a",
+				"85a7a4c9-252a-6a52-a464-7465ce05fe5c",
+				"c9b69aa2-eea0-e69d-8605-9220a68590e1",
+				"f6941fac-d358-97ab-21af-1fb2217a6f57",
+				"a989cf7f-f892-2404-a1bb-8bea60176812"
+			],
+			"owner": "25111228",
+			"folders_order": [],
+			"id": "ebf7bdd6-abe7-c814-8019-c16ff749da3c"
+		}
+	],
+	"folders_order": [
+		"ebf7bdd6-abe7-c814-8019-c16ff749da3c"
+	],
+	"timestamp": 1673301675665,
+	"owner": "25111228",
+	"public": false,
+	"requests": [
+		{
+			"id": "1a5c9147-0a24-51ab-07df-c7eda617878a",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://restful-booker.herokuapp.com/booking\n",
+			"folder": "ebf7bdd6-abe7-c814-8019-c16ff749da3c",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1673489637881,
+			"name": "Booking - Create Booking-raw-json",
+			"description": "",
+			"collectionId": "e0e8ebe0-8602-3841-c5eb-360acd251559",
+			"responses": [],
+			"rawModeData": "{\n\t\"firstname\": \"Jim\",\n        \"lastname\": \"Brown\",\n        \"totalprice\": 111,\n        \"depositpaid\": true,\n        \"bookingdates\": {\n            \"checkin\": \"2018-01-01\",\n            \"checkout\": \"2019-01-01\"\n        },\n        \"additionalneeds\": \"Breakfast\"\n}"
+		},
+		{
+			"id": "1b8d43f0-f729-5d8b-6b7c-bf83dbfffb1b",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://restful-booker.herokuapp.com/auth",
+			"folder": "ebf7bdd6-abe7-c814-8019-c16ff749da3c",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1673735270216,
+			"name": "Auth - Create Token",
+			"description": "",
+			"collectionId": "e0e8ebe0-8602-3841-c5eb-360acd251559",
+			"responses": [],
+			"rawModeData": "{\r\n    \"username\" : \"admin\",\r\n    \"password\" : \"password123\"\r\n}"
+		},
+		{
+			"id": "62f8cafb-fcec-2bcb-9436-b43b2a275fff",
+			"headers": "",
+			"headerData": [],
+			"url": "https://restful-booker.herokuapp.com/booking",
+			"folder": "ebf7bdd6-abe7-c814-8019-c16ff749da3c",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1673489631924,
+			"name": "Booking - GetBookingIds",
+			"description": "",
+			"collectionId": "e0e8ebe0-8602-3841-c5eb-360acd251559",
+			"responses": []
+		},
+		{
+			"id": "85a7a4c9-252a-6a52-a464-7465ce05fe5c",
+			"headers": "Content-Type: application/json\nAccept: application/json\nAuthorization: Basic YWRtaW46cGFzc3dvcmQxMjM=\nCookie: token=abc123\nPostman-Token: <calculated when request is sent>\n//Host: <calculated when request is sent>\nUser-Agent: PostmanRuntime/7.29.2\nConnection: keep-alive\nAccept-Encoding: gzip, deflate, br\n//Content-Length: <calculated when request is sent>\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "Sets the format of payload you are sending. Can be application/json or text/xml",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "Sets what format the response body is returned in. Can be application/json or application/xml\n\n",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46cGFzc3dvcmQxMjM=",
+					"description": "YWRtaW46cGFzc3dvcmQxMjM=] Basic authorization header to access the PUT endpoint, can be used as an alternative to the Cookie header\n\n",
+					"enabled": true
+				},
+				{
+					"key": "Cookie",
+					"value": "token=abc123",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Postman-Token",
+					"value": "<calculated when request is sent>",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Host",
+					"value": "<calculated when request is sent>",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "User-Agent",
+					"value": "PostmanRuntime/7.29.2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Connection",
+					"value": "keep-alive",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept-Encoding",
+					"value": "gzip, deflate, br",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Length",
+					"value": "<calculated when request is sent>",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "https://restful-booker.herokuapp.com/booking/43",
+			"folder": "ebf7bdd6-abe7-c814-8019-c16ff749da3c",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1673736027689,
+			"name": "Booking - UpdateBooking",
+			"description": "",
+			"collectionId": "e0e8ebe0-8602-3841-c5eb-360acd251559",
+			"responses": [],
+			"rawModeData": "{\r\n\t\"firstname\": \"James\",\r\n        \"lastname\": \"Brown\",\r\n        \"totalprice\": 111,\r\n        \"depositpaid\": true,\r\n        \"bookingdates\": {\r\n            \"checkin\": \"2018-01-01\",\r\n            \"checkout\": \"2019-01-01\"\r\n        },\r\n        \"additionalneeds\": \"Breakfast\"\r\n}"
+		},
+		{
+			"id": "99370514-df99-b635-5ff5-be9856d53627",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://restful-booker.herokuapp.com/booking/:id",
+			"folder": "ebf7bdd6-abe7-c814-8019-c16ff749da3c",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				"id": ""
+			},
+			"pathVariableData": [
+				{
+					"key": "id",
+					"value": ""
+				}
+			],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1673489635040,
+			"name": "Booking - GetBooking",
+			"description": "",
+			"collectionId": "e0e8ebe0-8602-3841-c5eb-360acd251559",
+			"responses": []
+		},
+		{
+			"id": "a989cf7f-f892-2404-a1bb-8bea60176812",
+			"headers": "",
+			"headerData": [],
+			"url": "https://restful-booker.herokuapp.com/ping",
+			"folder": "ebf7bdd6-abe7-c814-8019-c16ff749da3c",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1673906300407,
+			"name": "Ping - HealthCheck",
+			"description": "",
+			"collectionId": "e0e8ebe0-8602-3841-c5eb-360acd251559",
+			"responses": []
+		},
+		{
+			"id": "c9b69aa2-eea0-e69d-8605-9220a68590e1",
+			"headers": "Content-Type: application/json\nAccept: application/json\nCookie: token=<token_value>\nAuthorization: Basic YWRtaW46cGFzc3dvcmQxMjM=\n//Content-Length: <calculated when request is sent>\n//Host: <calculated when request is sent>\n//Accept-Encoding: gzip, deflate, br\n//Connection: keep-alive\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "Sets the format of payload you are sending. Can be application/json or text/xml\n\n",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "Sets what format the response body is returned in. Can be application/json or application/xml\n\n",
+					"enabled": true
+				},
+				{
+					"key": "Cookie",
+					"value": "token=<token_value>",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46cGFzc3dvcmQxMjM=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Length",
+					"value": "<calculated when request is sent>",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Host",
+					"value": "<calculated when request is sent>",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Accept-Encoding",
+					"value": "gzip, deflate, br",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Connection",
+					"value": "keep-alive",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "https://restful-booker.herokuapp.com/booking/43",
+			"folder": "ebf7bdd6-abe7-c814-8019-c16ff749da3c",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PATCH",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1673905136228,
+			"name": "Booking - PartialUpdateBooking",
+			"description": "",
+			"collectionId": "e0e8ebe0-8602-3841-c5eb-360acd251559",
+			"responses": [],
+			"rawModeData": "{\r\n    \"firstname\" : \"James\",\r\n    \"lastname\" : \"Brown\",\r\n    \"totalprice\" : 111,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2018-01-01\",\r\n        \"checkout\" : \"2019-01-01\"\r\n    },\r\n    \"additionalneeds\" : \"Breakfast\"\r\n}"
+		},
+		{
+			"id": "f6941fac-d358-97ab-21af-1fb2217a6f57",
+			"headers": "Cookie: token=<token_value>\nAuthorization: Basic YWRtaW46cGFzc3dvcmQxMjM=\n//Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Cookie",
+					"value": "token=<token_value>",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46cGFzc3dvcmQxMjM=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "https://restful-booker.herokuapp.com/booking/43",
+			"folder": "ebf7bdd6-abe7-c814-8019-c16ff749da3c",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1673906647420,
+			"name": "Booking - DeleteBooking",
+			"description": "",
+			"collectionId": "e0e8ebe0-8602-3841-c5eb-360acd251559",
+			"responses": [],
+			"rawModeData": ""
+		}
+	]
+}
